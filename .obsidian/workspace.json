@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "04-log"
             }
+          },
+          {
+            "id": "3ad01c3ed8f56419",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "docs/assets/bh1750fvi-e-186247.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bh1750fvi-e-186247"
+            }
           }
         ]
       }
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/04-log.md",
+                "file": "docs/01-tasks 📋.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,12 +208,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "task-status:Change Checkbox Status": false
     }
   },
-  "active": "bd44c9712008a1b6",
+  "active": "08cfa3143b81843b",
   "lastOpenFiles": [
-    "docs/01-tasks.md",
+    "docs/01-tasks 📋.md",
+    "docs/assets/bh1750fvi-e-186247.pdf",
+    "docs/04-log.md",
+    "docs/02-hardware.md",
+    "docs/03-decisions.md",
     "ESP32_Flower_tracker/sdkconfig.4d_systems_esp32s3_gen4_r8n16",
     "ESP32_Flower_tracker/src/CMakeLists.txt",
     "ESP32_Flower_tracker/CMakeLists.txt",
@@ -211,13 +228,9 @@
     "ESP32_Flower_tracker/lib/README",
     "ESP32_Flower_tracker/lib",
     "ESP32_Flower_tracker/include/README",
-    "ESP32_Flower_tracker/include",
-    "docs/02-software.md",
     "docs/assets/Pasted image 20260820183527.png",
     "docs/templates/sensor.md",
     "docs/05-debug-log.md",
-    "docs/03-decisions.md",
-    "docs/04-log.md",
     "README.md",
     "docs/Untitled.canvas",
     "Welcome.md"

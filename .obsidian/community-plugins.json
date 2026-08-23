@@ -2,5 +2,7 @@
   "obsidian-style-settings",
   "editing-toolbar",
   "obsidian-git",
-  "obsidian-languagetool-plugin"
+  "obsidian-languagetool-plugin",
+  "checkbox-sync",
+  "task-status"
 ]

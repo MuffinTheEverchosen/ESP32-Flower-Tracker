@@ -1,6 +1,22 @@
+# Rozpiska elementów
 ## 0.96inch OLED Module
-[datasheet](https://www.waveshare.com/wiki/0.96inch_OLED_Module)
+[datasheet](https://www.lcdwiki.com/0.96inch_OLED_Module_MC096VX)
+### Pinout
+
+| Pin No. | Pin Name | Pin Description        |
+| ------- | -------- | ---------------------- |
+| 1.      | GND      | Ground                 |
+| 2.      | VDD      | Power source 3.3V - 5V |
+| 3.      | SCK      | Serial Clock           |
+| 4.      | SDA      | Serial Data            |
+
 ## Capacitive Soil Moisture Sensor 1.2V
+### Pinout
+| Pin No. | Pin Name | Pin Description           |
+| ------- | -------- | ------------------------- |
+| 1.      | GND      | Ground                    |
+| 2.      | VCC      | power source of 3.3V - 5V |
+| 3.      | AOUT     | analog output 0V-3V       |
 ### Specs
 - Sensor type: Analogue
 - Operating voltage: 3.3 VDC
@@ -37,8 +53,16 @@ datasheet
 - Termination: Automatic when charge current drops below 1/10th of set current
 - Temperature protection: Built-in thermal regulation (reduces current if chip overheats)
 - Package: Tiny PCB module, ~25mm x 19mm
-## GY-302 BH1750 BH1750FVI
+## GY-302 BH1750 BH1750FVI (light sensor)
 [[bh1750fvi-e-186247.pdf|datasheet]]
+### Pinout
+| Pin No. | Pin Name | Pin Description                     |
+| ------- | -------- | ----------------------------------- |
+| 1.      | VCC      | Ground                              |
+| 2.      | GND      | power source of 3.3V                |
+| 3.      | SCL      | Serial Clock                        |
+| 4.      | SDA      | Serial Data                         |
+| 5.      | ADDR     | address H - "1011100" L - "0100011" |
 ### Features
 - I2C bus Interface ( f / s Mode Support )
 - Spectral responsibility is approximately human eye response
@@ -57,3 +81,5 @@ datasheet
 ##  ESP32 WROOM-32 TYPE-C CH340C/CP2102
 [[esp-wroom-32_datasheet_en-1223836.pdf|datasheet]]
 ![[Pasted image 20260820183527.png]]
+
+
