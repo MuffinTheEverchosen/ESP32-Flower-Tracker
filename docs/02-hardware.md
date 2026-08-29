@@ -82,4 +82,14 @@ datasheet
 [[esp-wroom-32_datasheet_en-1223836.pdf|datasheet]]
 ![[Pasted image 20260820183527.png]]
 
+### Pinout
+
+
+| Pin Name | Pin Eqv      | Pin Description                       |
+| -------- | ------------ | ------------------------------------- |
+| 3v3      | power source | Gives power of 3.3V to other elements |
+| GND      | ground       | ground for 3.3                        |
+| D21      | SDA          | serial data                           |
+| D22      | SCK          | serial clock                          |
+
 

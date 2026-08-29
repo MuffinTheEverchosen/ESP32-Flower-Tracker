@@ -25,15 +25,18 @@
             "id": "3ad01c3ed8f56419",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "docs/assets/bh1750fvi-e-186247.pdf"
+                "file": "docs/04-log.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "bh1750fvi-e-186247"
+              "icon": "lucide-file",
+              "title": "04-log"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,25 +212,28 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
-      "task-status:Change Checkbox Status": false
+      "task-status:Change Checkbox Status": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "08cfa3143b81843b",
+  "active": "3ad01c3ed8f56419",
   "lastOpenFiles": [
-    "docs/01-tasks 📋.md",
-    "docs/assets/bh1750fvi-e-186247.pdf",
+    "docs/templates/GitLog.md",
     "docs/04-log.md",
     "docs/02-hardware.md",
+    "ESP32_Flower_Tracker/ESP32_Flower_Tracker.code-workspace",
+    "ESP32_Flower_Tracker/compile_commands.json",
+    "ESP32_Flower_Tracker/build/CMakeFiles/cmake.check_cache",
+    "ESP32_Flower_Tracker/build/CMakeCache.txt",
+    "ESP32_Flower_Tracker/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake.tmp",
+    "ESP32_Flower_Tracker/build/CMakeFiles/4.3.0/CMakeDetermineCompilerABI_CXX.bin",
+    "ESP32_Flower_Tracker/build/CMakeFiles/CMakeScratch/TryCompile-Ft0OQs/cmTC_9816e",
+    "ESP32_Flower_Tracker/build/CMakeFiles/CMakeScratch/TryCompile-Ft0OQs/CMakeFiles/cmTC_9816e.dir/CMakeCXXCompilerABI.cpp.o",
+    "ESP32_Flower_Tracker/build/CMakeFiles/CMakeScratch/TryCompile-Ft0OQs/CMakeFiles/cmTC_9816e.dir/CMakeCXXCompilerABI.cpp.o.d",
+    "ESP32_Flower_Tracker/build/CMakeFiles/CMakeScratch/TryCompile-Ft0OQs/CMakeFiles/cmTC_9816e.dir/CMakeCXXCompilerABI.cpp-cf8350c2.o.tmp",
+    "docs/01-tasks 📋.md",
     "docs/03-decisions.md",
-    "ESP32_Flower_tracker/sdkconfig.4d_systems_esp32s3_gen4_r8n16",
-    "ESP32_Flower_tracker/src/CMakeLists.txt",
-    "ESP32_Flower_tracker/CMakeLists.txt",
-    "ESP32_Flower_tracker/src/main.c",
-    "ESP32_Flower_tracker/test/README",
-    "ESP32_Flower_tracker/test",
-    "ESP32_Flower_tracker/lib/README",
-    "ESP32_Flower_tracker/lib",
-    "ESP32_Flower_tracker/include/README",
     "docs/assets/Pasted image 20260820183527.png",
     "docs/templates/sensor.md",
     "docs/05-debug-log.md",

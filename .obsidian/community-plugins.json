@@ -4,5 +4,6 @@
   "obsidian-git",
   "obsidian-languagetool-plugin",
   "checkbox-sync",
-  "task-status"
+  "task-status",
+  "templater-obsidian"
 ]
