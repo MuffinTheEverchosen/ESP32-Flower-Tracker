@@ -7,3 +7,8 @@ Created basic tasks and started making setup tasks. After that completed writing
 
 2026-08-29 Automatic pushing script
 I Created script for auto pushing to git after im done for a day
+
+
+
+2026-08-30 Initial Testing Env
+Today I created basic testing environment for testing parts of code that dont need microcontroller to work
