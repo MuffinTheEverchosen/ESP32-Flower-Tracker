@@ -1,0 +1,9 @@
+CompileFlags:
+  Remove: 
+    - "-mlongcalls"
+    - "-fstrict-volatile-bitfields"
+    - "-fno-tree-switch-conversion"
+    - "-free"
+    - "-fipa-pta"
+    - "-fno-jump-tables"
+    - "-mfix-esp32-psram-cache-issue"

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/04-log.md",
+                "file": "docs/templates/GitLog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04-log"
+              "title": "GitLog"
             }
           },
           {
@@ -33,6 +33,18 @@
               },
               "icon": "lucide-file",
               "title": "04-log"
+            }
+          },
+          {
+            "id": "79d58725bc9fb52c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "docs/assets/bh1750fvi-e-186247.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bh1750fvi-e-186247"
             }
           }
         ],
@@ -213,12 +225,18 @@
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "task-status:Change Checkbox Status": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1d10e1fb507ebfb5",
+  "active": "3ad01c3ed8f56419",
   "lastOpenFiles": [
+    "docs/02-hardware.md",
+    "docs/assets/bh1750fvi-e-186247.pdf",
+    "docs/03-decisions.md",
+    "What to do flashcards for.md",
+    "ESP32_Flower_Tracker/src/main.cpp",
+    "docs/04-log.md",
+    "docs/templates/GitLog.md",
     "ESP32_Flower_Tracker/src/tests/test_ring_buffer.cpp",
     "ESP32_Flower_Tracker/src/tests/I2C_scanner.cpp",
     "ESP32_Flower_Tracker/src/tests",
@@ -227,14 +245,7 @@
     "ESP32_Flower_Tracker/src/test/test_ring_buffer.cpp",
     "ESP32_Flower_Tracker/src/test",
     "ESP32_Flower_Tracker/test/I2C_scanner.cpp",
-    "ESP32_Flower_Tracker/lib/ring_buffer/ring_buffer.h",
-    "ESP32_Flower_Tracker/lib/ring_buffer/ring_buffer.cpp",
-    "ESP32_Flower_Tracker/lib/ring_buffer",
-    "docs/templates/GitLog.md",
-    "docs/04-log.md",
-    "docs/02-hardware.md",
     "docs/01-tasks 📋.md",
-    "docs/03-decisions.md",
     "docs/assets/Pasted image 20260820183527.png",
     "docs/templates/sensor.md",
     "docs/05-debug-log.md",

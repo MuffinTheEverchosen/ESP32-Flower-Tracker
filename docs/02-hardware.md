@@ -10,6 +10,8 @@
 | 3.      | SCK      | Serial Clock           |
 | 4.      | SDA      | Serial Data            |
 
+### Tested Address
+0x3C
 ## Capacitive Soil Moisture Sensor 1.2V
 ### Pinout
 | Pin No. | Pin Name | Pin Description           |
@@ -34,6 +36,9 @@
 | 4           | SDA          | Serial Data                                                                                                            |
 | 5           | CSB          | CSB pin to GND to have SPI and to VCC(3.3V) for I2C. It’s an input to the chip.                                        |
 | 6           | SDO          | **S**erial **D**ata **O**ut / **M**aster **I**n **S**lave **O**ut pin, for data sent from the BMP280 to your processor |
+
+### Tested Address
+0x76
 ### Specs
 - Model: GY-BMP280-3.3
 - Chip: BMP280
@@ -63,6 +68,8 @@ datasheet
 | 3.      | SCL      | Serial Clock                        |
 | 4.      | SDA      | Serial Data                         |
 | 5.      | ADDR     | address H - "1011100" L - "0100011" |
+### Tested Address
+0x23
 ### Features
 - I2C bus Interface ( f / s Mode Support )
 - Spectral responsibility is approximately human eye response
@@ -91,5 +98,6 @@ datasheet
 | GND      | ground       | ground for 3.3                        |
 | D21      | SDA          | serial data                           |
 | D22      | SCK          | serial clock                          |
+| D12      | AIN          | Analog data from moisture sensor      |
 
 
