@@ -14,3 +14,6 @@ Today I created basic testing environment for testing parts of code that dont ne
 
 2026-09-01 Finding Addresses
 I fixed remaining problems with IDE and after that run I2C scannner to find all addresses of my sensor, started establishing communication with BH1750
+
+2026-09-09 Buffering
+Basic Ring buffer was written, its functionality tested. Currently data can only be added to it but not read. Real problem is thinking out solution of how to read data

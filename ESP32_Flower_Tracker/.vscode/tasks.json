@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "link_current_binary",
+            "type": "shell",
+            "command": "ln -sf \"$(realpath $(bash .vscode/find_program.sh))\" .pio/build/current_program",
+            "problemMatcher": []
+        }
+    ]
+}
