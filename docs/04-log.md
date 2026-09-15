@@ -17,3 +17,6 @@ I fixed remaining problems with IDE and after that run I2C scannner to find all 
 
 2026-09-09 Buffering
 Basic Ring buffer was written, its functionality tested. Currently data can only be added to it but not read. Real problem is thinking out solution of how to read data
+
+2026-09-15 Finished Buffer and starting of dashboard site
+With ring buffer i decided for moving average data acqusition. It still may change based on methods use for ESP32. My main concern is power usage. Also i started setting up Dashboard site for the project, I settled with Thingsboard

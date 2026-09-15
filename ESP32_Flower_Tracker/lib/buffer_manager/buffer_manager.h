@@ -13,13 +13,9 @@ class buffer_manager {
             this->buffers_name = names_of_buffers;
         }
 
-        bool buffer_step(const std::array<T, num_of_buffers>& new_values) {
-            if(!size_validation(new_values)) {
-                return false;
-            }
-            
+        bool buffer_add_values(const std::array<T, num_of_buffers>& new_values) {      
             for(int i{0}; i < num_of_buffers; i++) {
-                bool test = this->items[i].add(new_values[i]);
+                bool test = this->items[i].add_value(new_values[i]);
                 
                 if(!test) {
                     return false;
@@ -27,10 +23,34 @@ class buffer_manager {
             }
 
             return true;
-        };
+        } ;
 
-        bool size_validation(const std::array<T, num_of_buffers>& item) {
-            return item.size() == num_of_buffers;
+        bool get_moving_average(std::array<T, num_of_buffers>& output, const size_t amount_of_data_to_keep) {
+            for(ring_buffer<T, Capacity>& buffer : this->items) {
+                if(!buffer.is_full()) {
+                    return false;
+                }
+            }
+            
+            size_t tail_steps{Capacity - amount_of_data_to_keep};
+            
+            for(int buffer_index{}; buffer_index < num_of_buffers; buffer_index++) {
+                T buffer_sum{};
+
+                for(int value_index{}; value_index < Capacity; value_index++) {
+                    T value{};
+                    if(!this->items[buffer_index].get_value(value)) {
+                        return false;
+                    }
+
+                    buffer_sum += value;  
+                }
+                this->items[buffer_index].reset_tail(tail_steps);
+
+                output[buffer_index] = buffer_sum / Capacity;
+            }
+
+            return true;
         }
 
         ring_buffer<T, Capacity>& get_item(size_t id) {
