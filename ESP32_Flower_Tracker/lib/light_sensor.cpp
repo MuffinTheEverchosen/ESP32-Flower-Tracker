@@ -13,4 +13,6 @@ class light_sensor {
     public:
         light_sensor(const uint8_t addr, TwoWire& wire_bus)
             : addr{addr}, wire{wire_bus} {};
+
+        
 };

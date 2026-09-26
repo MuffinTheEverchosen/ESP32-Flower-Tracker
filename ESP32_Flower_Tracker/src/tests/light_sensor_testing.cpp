@@ -2,36 +2,46 @@
 #include "HardwareSerial.h"
 #include "Wire.h"
 #include "esp32-hal.h"
-#include <cstddef>
 #include <cstdint>
+#include <BH1750.h>
+#include <DisplayMenu.h>
+
+BH1750 lightSensor;
+
+ThreadSafeOLED safeOled;
+DisplayMenu menu(&safeOled);
 
 constexpr uint8_t ADR_OLED{0x3C};
 constexpr uint8_t ADR_BMP280{0x76};
 constexpr uint8_t ADR_BH1750{0x23};
 
+float lux{};
+
 
 
 void setup() {
+    Serial.begin(115200);
+
     Wire.begin();
 
-    Serial.begin(115200);
-    while(!Serial) {
-        delay(10);
-    }
-    Serial.println("Serial communication established!");
+    menu.setup();
+    menu.setScale(1.5);
+    menu.addItem("Light:", &lux);
+
+    lightSensor.begin(BH1750::ONE_TIME_LOW_RES_MODE,ADR_BH1750);
+    Serial.println(F("BH1750 One-Time Test"));
 }  
 
 void loop() {
-    Wire.beginTransmission(ADR_BH1750);
-    Wire.write(BH1750_High_Resolution_Mode);
-    Wire.endTransmission();
-    delay(180);
-    Wire.requestFrom(ADR_BH1750, size_t{2});
-    uint8_t msb = Wire.read();
-    uint8_t lsb = Wire.read();
-    float lux = ((msb << 8) | lsb) / 1.2f;
-
-    Serial.println("light: " + String{lux});
-
-    delay(10);
+    lightSensor.configure(BH1750::ONE_TIME_HIGH_RES_MODE);
+    while (!lightSensor.measurementReady(true)) {
+        yield();
+    }
+    lux = lightSensor.readLightLevel();
+    
+    Serial.print("Light: ");
+    Serial.print(lux);
+    Serial.println(" lx");
+    menu.repaint();
+    delay(100);
 }

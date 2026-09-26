@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9e7965e565bc6d2b",
+        "id": "e9b63181413bc559",
         "type": "tabs",
         "children": [
           {
-            "id": "3ad01c3ed8f56419",
+            "id": "f05eca283e7b480f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 257.47265625
   },
   "right": {
     "id": "04bd33cf6a7976e3",
@@ -185,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 705.94921875
+    "width": 705.94921875,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,15 +202,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3ad01c3ed8f56419",
+  "active": "f05eca283e7b480f",
   "lastOpenFiles": [
-    "docs/Things-Board data.md",
     "docs/assets/bh1750fvi-e-186247.pdf",
+    "docs/02-hardware.md",
     "docs/04-log.md",
+    "docs/Things-Board data.md",
     "ESP32_Flower_Tracker/lib/light_sensor.cpp",
     "ESP32_Flower_Tracker/src/tests/light_sensor_testing.cpp",
     "docs/03-decisions.md",
-    "docs/02-hardware.md",
     "docs/templates/GitLog.md",
     "docs/buffer logic.md",
     "thingsboard/docker-compose.yml",
