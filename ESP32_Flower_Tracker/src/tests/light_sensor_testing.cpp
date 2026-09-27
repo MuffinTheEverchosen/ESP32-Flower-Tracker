@@ -25,7 +25,7 @@ void setup() {
     Wire.begin();
 
     menu.setup();
-    menu.setScale(1.5);
+    menu.setScale(1);
     menu.addItem("Light:", &lux);
 
     lightSensor.begin(BH1750::ONE_TIME_LOW_RES_MODE,ADR_BH1750);

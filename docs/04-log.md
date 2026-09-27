@@ -26,3 +26,6 @@ I created class for managing light sensor
 
 2026-09-27 The end of light sensor
 Prototype with light sensor was finished, i choosed low resolution mode with single measurement for power saving
+
+2026-09-27 BMP configuration
+Configured BMP sensor to read pressure and temperature, followed same philosophy as with light sensor
