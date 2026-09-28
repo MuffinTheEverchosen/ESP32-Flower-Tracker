@@ -85,4 +85,16 @@ class ring_buffer {
         this->tail = (this->head + position) % Capacity;
         this->count = Capacity - position;
     }
+
+    bool peek(size_t index, T& output) const {   // 0 = oldest
+        if (index >= count) return false;
+        output = buffer[(tail + index) % Capacity];
+        return true;
+    }
+
+    void drop_oldest(size_t n) {
+        if (n > count) n = count;
+        tail = (tail + n) % Capacity;
+        count -= n;
+    }
 };

@@ -29,3 +29,6 @@ Prototype with light sensor was finished, i choosed low resolution mode with sin
 
 2026-09-27 BMP configuration
 Configured BMP sensor to read pressure and temperature, followed same philosophy as with light sensor
+
+2026-09-28 buffer fixes
+Did some finishing touches for buffer manager, changed a bit semantic of get_moving_average also started implementing first version of main program
