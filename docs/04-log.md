@@ -11,7 +11,6 @@ I Created script for auto pushing to git after im done for a day
 2026-08-30 Initial Testing Env
 Today I created basic testing environment for testing parts of code that dont need microcontroller to work
 
-
 2026-09-01 Finding Addresses
 I fixed remaining problems with IDE and after that run I2C scannner to find all addresses of my sensor, started establishing communication with BH1750
 
@@ -32,3 +31,6 @@ Configured BMP sensor to read pressure and temperature, followed same philosophy
 
 2026-09-28 buffer fixes
 Did some finishing touches for buffer manager, changed a bit semantic of get_moving_average also started implementing first version of main program
+
+2026-09-29 i dont know
+i didnt do a lot today
