@@ -1,10 +1,11 @@
 #include "Arduino.h"
 #include "BH1750.h"
+#include "HardwareSerial.h"
 #include "bmp280_ltsm.hpp"
 #include "esp32-hal.h"
 #include "esp_attr.h"
 #include <cstdint>
-#include "/home/muffin/Documents/Projects/ESP32_Flower_Tracker/ESP32_Flower_Tracker/lib/buffer_manager.h"
+#include "buffer_manager.h"
 
 constexpr uint8_t ADR_OLED{0x3C};
 constexpr uint8_t ADR_BMP280{0x76};
@@ -13,9 +14,13 @@ constexpr uint8_t ADR_BH1750{0x23};
 BMP280_Sensor bmp280(ADR_BMP280, &Wire);
 BH1750 lightSensor;
 
+bool debug{false};
+
 RTC_DATA_ATTR buffer_manager<float, 16, 3> readings({"light", "pressure", "temperature"});
 
 void setup() {
+    if(debug) Serial.begin(115200);
+
     Wire.begin();
 
     lightSensor.begin(BH1750::ONE_TIME_LOW_RES_MODE, ADR_BH1750);
@@ -28,6 +33,22 @@ void loop() {
     lightSensor.configure(BH1750::ONE_TIME_LOW_RES_MODE);
     bmp280.takeForcedMeasurement();
 
-    if(!lightSensor.measurementReady() || bmp280.Status)
+    float light{};
+    float temperature{};
+    float pressure{};
 
+    if(!lightSensor.measurementReady()) {
+        yield();
+    } else {
+        light = lightSensor.readLightLevel();
+        temperature = bmp280.readTemperature();
+        pressure = bmp280.readPressure(BMP280_Sensor::PressureUnit_e::hPa);
+
+
+        if(readings.buffer_add_values({light, pressure, temperature})) {
+            return;
+        } else if (debug) {
+            Serial.printf("Reading were not added");
+        }
+    }
 }

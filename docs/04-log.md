@@ -34,3 +34,6 @@ Did some finishing touches for buffer manager, changed a bit semantic of get_mov
 
 2026-09-29 i dont know
 i didnt do a lot today
+
+2026-09-30 not much
+just added a bit more of code to main, now im struggling with deep sleep, i think i will need to rewrite it a bit. Next step will be to establish connection with things-board

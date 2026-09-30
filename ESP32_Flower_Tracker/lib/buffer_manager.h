@@ -2,20 +2,14 @@
 
 #include <array>
 #include <cstddef>
-#include <string>
 #include "/home/muffin/Documents/Projects/ESP32_Flower_Tracker/ESP32_Flower_Tracker/lib/ring_buffer.h"
 
 template<typename T, size_t Capacity, size_t num_of_buffers>
 class buffer_manager {
     private:
         std::array<ring_buffer<T, Capacity>, num_of_buffers> items{};
-        std::array<std::string, num_of_buffers> buffers_name{};
         using acc_t = std::conditional_t<std::is_floating_point_v<T>, T, std::int32_t>;
     public:
-        buffer_manager(const std::array<std::string, num_of_buffers> names_of_buffers) {
-            this->buffers_name = names_of_buffers;
-        }
-
         bool buffer_add_values(const std::array<T, num_of_buffers>& new_values) {      
             for(size_t i{0}; i < num_of_buffers; i++) {
                 bool test = this->items[i].add_value(new_values[i]);

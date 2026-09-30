@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e9b63181413bc559",
+        "id": "f8ce8c3404667161",
         "type": "tabs",
         "children": [
           {
-            "id": "f05eca283e7b480f",
+            "id": "7bf9b0979faff47f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -202,13 +202,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f05eca283e7b480f",
+  "active": "7bf9b0979faff47f",
   "lastOpenFiles": [
+    "docs/04-log.md",
     "ESP32_Flower_Tracker/compile_commands.json",
     "ESP32_Flower_Tracker/lib/buffer_manager.h",
     "docs/02-hardware.md",
     "ESP32_Flower_Tracker/src/tests/BMP_testing.cpp",
-    "docs/04-log.md",
     "docs/assets/bh1750fvi-e-186247.pdf",
     "docs/Things-Board data.md",
     "ESP32_Flower_Tracker/lib/light_sensor.cpp",
@@ -224,7 +224,6 @@
     "docs/01-tasks 📋.md",
     "ESP32_Flower_Tracker/src/tests/test_ring_buffer",
     "What to do flashcards for.md",
-    "ESP32_Flower_Tracker/src/main.cpp",
     "docs/assets/Pasted image 20260820183527.png",
     "docs/templates/sensor.md",
     "docs/05-debug-log.md",
